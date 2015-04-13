@@ -101,7 +101,7 @@ function movePiece($target,$source){
   $source.attr('class', targetClasses);
 
   $target.data('y') === 0 ? $target.addClass('king smithKing') : console.log('shit monkey');
-  $target.data('y') === 7 ? $target.addClass('king neoKinged') : console.log('shit monkey');
+  $target.data('y') === 7 ? $target.addClass('king neoKing') : console.log('shit monkey');
 
 }
 

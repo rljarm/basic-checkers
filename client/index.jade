@@ -7,14 +7,15 @@ html
     link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
     link(rel='shortcut icon', href='/favicon.ico')
   body
-    h1 Basic Checkers
-    
-    table#board
-      tbody
-        - for(var y = 0; y < 8; y++) 
-          tr
-            -for(var x = 0; x < 8; x++)
-             td(data-x=x, data-y=y class=((x+y)%2) ? 'valid' : '')
+    div#main
+      div#main-content
+        h1 Checkers
+        table#board
+          tbody
+            - for(var y = 0; y < 8; y++) 
+              tr
+                -for(var x = 0; x < 8; x++)
+                 td(data-x=x, data-y=y class=((x+y)%2) ? 'valid' : '')
 
     script(src='/vendor/lodash/lodash.min.js')
     script(src='/vendor/jquery/dist/jquery.min.js')
